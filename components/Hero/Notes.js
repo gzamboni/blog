@@ -1,7 +1,6 @@
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
 import Social from '../Common/Social.js'
-import Avatar from './NotionAvatar.js'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
 
@@ -25,9 +24,6 @@ const NoteHero = ({ blockMap }) => {
           <div className='text-gray-400 text-xs font-light py-4'>
             {t.HERO.NOTES.TEXT_FOOTER}
           </div>
-        </div>
-        <div className='w-2/5'>
-          <Avatar className='text-gray-600 dark:text-gray-300' />
         </div>
       </div>
     </>
